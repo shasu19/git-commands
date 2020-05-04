@@ -125,6 +125,18 @@
  
 	2. checkout dev and do a pull to update to latest. Perform 'git co master' to update branch. git pull to update. 'git merge --no-commit --no-ff {sha_of_dev_branch_you_want_to_commit}'. Look at the source in current working dir to see if all looks good. Then 'git commit' to commit changes into master.
 
+	steps:
+	git checkout dev
+	git pull
+	git checkout master
+	git pull
+	git merge --no-commit --no-ff --squash dev
+	git merge --no-commit --no-ff --squash dev_sha_id
+	git commit -m "commit message"
+	git push
+
+
+
     
 
 
