@@ -115,6 +115,16 @@
     differences in files: git diff <file_name>
     
     #==========================================================================
+
+    Learning from Nicholas/Navin
+  	-- commit particular checking
+ 
+	couple of options:
+ 
+	1. checkout dev. 'git co {sha_you_want}'. create branch in local env (it will honor current rev). push branch. Then, use pull request to merge into master.
+ 
+	2. checkout dev and do a pull to update to latest. Perform 'git co master' to update branch. git pull to update. 'git merge --no-commit --no-ff {sha_of_dev_branch_you_want_to_commit}'. Look at the source in current working dir to see if all looks good. Then 'git commit' to commit changes into master.
+
     
 
 
